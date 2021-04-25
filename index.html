@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <style>
+     main {
+        display:grid;
+        grid-gap:20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-auto-rows: 2f;                   /*https://youtu.be/n1Lnar9mTF8?t=935*/
+     }
+     main > div {
+        background:#f0f0f0;
+        padding:10px;
+        text-align:center;
+     }
+     main > div:nth-of-type(1) {
+       grid-column: 1 / 3;
+       grid-row: 2 / 4;
+     }
+     main > div:nth-of-type(2) {
+       grid-area: 2 / 5 / 4 / 7;
+     }
+  </style>
+</head>
+<body>
+  <a href="https://youtu.be/n1Lnar9mTF8?t=124">https://youtu.be/n1Lnar9mTF8?t=124</a>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+  </div>
+</body>
+</html>
